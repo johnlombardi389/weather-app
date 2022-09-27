@@ -15,8 +15,14 @@
 }
 
 body {
-  background-color: #222;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
   font-family: var(--ff-main);
+  margin: 0;
 }
 
 main {
@@ -25,14 +31,20 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
   padding: 2rem;
   border-radius: 20px;
   width: 100%;
   max-width: 450px;
   margin: 20px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
