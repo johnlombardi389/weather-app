@@ -6,6 +6,11 @@
   --fw-light: 200;
   --fw-reg: 400;
   --fw-bold: 700;
+
+  --fs-small: 0.875rem;
+  --fs-main: 1rem;
+  --fs-search: 1.25rem;
+  --fs-head: 1.5rem;
 }
 
 *,
@@ -56,12 +61,23 @@ main {
   height: 40px;
   width: 40px;
   outline: none;
-  background: #7c7c7c2b;
+  background: #b8b8b82b;
   color: white;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background: #7c7c7c6b;
+  background: #9696966b;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  background: #b8b8b82b;
+  color: white;
+  font-size: var(--fs-search);
+  width: calc(100% - 100px);
 }
