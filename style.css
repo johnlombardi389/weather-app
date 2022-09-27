@@ -79,5 +79,5 @@ main {
   background: #b8b8b82b;
   color: white;
   font-size: var(--fs-search);
-  width: calc(100% - 100px);
+  width: calc(100% - 50px);
 }
