@@ -27,7 +27,8 @@ function getWeather() {
 getWeather();
 
 function showWeather(data) {
-  let { temp, description, feels_like, pressure, humidity, wind_speed } = data.current;
+  let { temp, description, feels_like, pressure, humidity, wind_speed } =
+    data.current;
 
   weather.innerHTML = `<h2 class="city">Weather in City</h2>
   <h1 class="temp">${temp}</h1>
@@ -35,5 +36,5 @@ function showWeather(data) {
   <div class="feels-like">Feels like: ${feels_like}</div>
   <div class="pressure">Pressure: ${pressure}</div>
   <div class="humidity">Humidity: ${humidity}</div>
-  <div class="wind">Wind Speed: ${wind_speed}</div>;
+  <div class="wind">Wind Speed: ${wind_speed}</div>;`;
 }
