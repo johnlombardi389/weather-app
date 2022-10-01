@@ -20,14 +20,26 @@
 }
 
 body {
-  background-image: url("https://source.unsplash.com/1600x900/?landscape");
-  min-height: 100%;
-  background-attachment: fixed;
+  background-image: url("https://source.unsplash.com/1920x1080/?landscape");
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
+  overflow: hidden;
   font-family: var(--ff-main);
   margin: 0;
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-image: url("https://source.unsplash.com/2560x1440/?landscape");
+  }
+}
+
+@media (max-width: 1300px) {
+  body {
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  }
 }
 
 main {
@@ -39,7 +51,7 @@ main {
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 2rem;
   border-radius: 20px;
